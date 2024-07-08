@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            direction: rtl;
+            overflow-x: hidden; /* מנע גלילה אופקית */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px; /* הגדר רוחב מקסימלי לתוכן */
+            margin: auto;
+            padding: 20px;
+            text-align: right; /* יישור טקסט לימין */
+            flex-grow: 1;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center; /* יישור הכותרת למרכז */
+        }
+        main {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            flex-grow: 1;
+        }
+        section {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        h2, h3 {
+            color: #333;
+            font-size: 1.8rem;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: auto; /* דחיפת הכותרת לתחתית */
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        footer ul li {
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+        footer p {
+            margin: 5px 0 0; /* הוספת מרווח בראש */
+        }
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 100%; /* הגבלת רוחב התמונה */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* מדיה קווירי למכשירים ניידים */
+        @media (max-width: 768px) {
+            footer {
+                padding: 20px 10px; /* הגבלת מרווחי הכותרת */
+            }
+            footer p {
+                margin: 10px auto; /* יישור הכותרת למרכז */
+                width: 90%; /* הגבלת רוחב הטקסט */
+                text-align: center; /* יישור הכותרת למרכז */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>אודות</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>משלוח מהיר ואמין</h2>
+            <p>אנו חברת משלוחים מתמחה שממוקמת בכפר הראמה, שם אנו מספקים שירותים ביעילות ובאיכות גבוהה ללא צורך במספר גדול של עובדים. אנו מתאפיינים במהירות ובדיוק, וניתן לענות על בקשותיכם ביעילות בכל רחבי הארץ, למעט אילת. תקופת האספקה נעה בין 1 ל-3 ימים, תלוי באזור.</p>
+        </section>
+        <section>
+            <h2>עלויות המשלוח</h2>
+            <p>עלויות המשלוח מתחילות ב-40 ש"ח לצפון וב-50 ש"ח לדרום ולירושלים, כולל מע"מ. אנו כאן כדי לענות על צרכייכם ברמות גבוהות של איכות ואמינות, ואנו שואפים לספק חוויית קנייה חלקה ואמינה.</p>
+        </section>
+        <section>
+            <h2>התחייבותנו</h2>
+            <p>אנו משקיעים בחדשנות ובאמינות בלב השירותים שלנו, ומתחייבים לספק שירות אישי ומבוסס על ידי צוות מקצועי ומצטיין.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">הבית</a></li>
+            </ul>
+            <p>כל הזכויות שמורות &copy; 2024 WalkerBox.</p>
+        </div>
+    </footer>
+</body>
+</html>
